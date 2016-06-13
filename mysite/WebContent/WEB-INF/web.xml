@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>mysite</display-name>
+	
+	<servlet>
+		<servlet-name>AddGroupServlet</servlet-name>
+		<servlet-class>
+			assign.servlets.AddGroupServlet
+		</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AddGroupServlet</servlet-name>
+		<url-pattern>/AddGroupServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteEmailAddress</servlet-name>
+		<servlet-class>
+			assign.servlets.DeleteEMailAddressServlet
+		</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>DeleteEmailAddress</servlet-name>
+		<url-pattern>/DeleteEMailAddressServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetEMailAddressDtlsServlet</servlet-name>
+		<servlet-class>
+			assign.servlets.GetEMailAddressDtlsServlet
+		</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>GetEMailAddressDtlsServlet</servlet-name>
+		<url-pattern>/servlets/emailaddressdtls</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet>
+		<servlet-name>GetAllEMailListServlet</servlet-name>
+		<servlet-class>
+			assign.servlets.GetAllEMailListServlet
+		</servlet-class>
+	</servlet>
+	
+	
+	<servlet>
+		<servlet-name>AddEmailAddressServlet</servlet-name>
+		<servlet-class>
+			assign.servlets.AddEMailAddressServlet
+		</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>AddEmailAddressServlet</servlet-name>
+		<url-pattern>/servlet/addemailaddress</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description>
+		</description>
+		<display-name>
+		GetEmailAddresswithAjax</display-name>
+		<servlet-name>GetEmailAddresswithAjax</servlet-name>
+		<servlet-class>
+		assign.servlets.GetEmailAddresswithAjax</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name></display-name>
+		<servlet-name>EditEmailAddress</servlet-name>
+		<servlet-class>assign.servlets.EditEmailAddress</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>LoginServlet</display-name>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>assign.servlets.LoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>RegisterServlet</display-name>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>assign.servlets.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>GetEmailListForAjax</display-name>
+		<servlet-name>GetEmailListForAjax</servlet-name>
+		<servlet-class>assign.servlets.GetEmailListForAjax</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>SelectGroup</display-name>
+		<servlet-name>SelectGroup</servlet-name>
+		<servlet-class>assign.servlets.SelectGroup</servlet-class>
+	</servlet>
+
+	
+	<servlet-mapping>
+		<servlet-name>GetAllEMailListServlet</servlet-name>
+		<url-pattern>/servlet/viewall</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>GetEmailAddresswithAjax</servlet-name>
+		<url-pattern>/getemailaddresswithAjax</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EditEmailAddress</servlet-name>
+		<url-pattern>/servlets/editemailaddress</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/RegisterServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetEmailListForAjax</servlet-name>
+		<url-pattern>/GetEmailListForAjax</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SelectGroup</servlet-name>
+		<url-pattern>/SelectGroup</url-pattern>
+	</servlet-mapping>
+<servlet>
+		<description>
+		</description>
+		<display-name></display-name>
+		<servlet-name>EditGroup</servlet-name>
+		<servlet-class>assign.servlets.GetGroupDtlsServlet</servlet-class>
+	</servlet>
+<servlet>
+	<description>
+	</description>
+	<display-name>GetGroupDetail</display-name>
+	<servlet-name>GetGroupDetail</servlet-name>
+	<servlet-class>assign.servlets.GetGroupDetail</servlet-class>
+</servlet>
+	<servlet-mapping>
+		<servlet-name>EditGroup</servlet-name>
+		<url-pattern>/GetGroupDtlsServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetGroupDetail</servlet-name>
+		<url-pattern>/GetGroupDetail</url-pattern>
+	</servlet-mapping>
+	
+	
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
